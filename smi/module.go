@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/sleepinggenius2/gosmi/smi/internal"
-	"github.com/sleepinggenius2/gosmi/types"
+	"github.com/zaccari/gosmi/smi/internal"
+	"github.com/zaccari/gosmi/types"
 )
 
 // char *smiLoadModule(const char *module)

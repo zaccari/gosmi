@@ -3,7 +3,7 @@ package parser
 import (
 	"github.com/alecthomas/participle/lexer"
 
-	"github.com/sleepinggenius2/gosmi/types"
+	"github.com/zaccari/gosmi/types"
 )
 
 type AgentCapabilityVariation struct {

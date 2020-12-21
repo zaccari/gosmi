@@ -9,8 +9,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/sleepinggenius2/gosmi/parser"
-	"github.com/sleepinggenius2/gosmi/types"
+	"github.com/zaccari/gosmi/parser"
+	"github.com/zaccari/gosmi/types"
 )
 
 type Module struct {
