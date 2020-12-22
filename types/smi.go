@@ -71,10 +71,6 @@ type SmiNode struct {
 	NodeKind    NodeKind
 }
 
-func (x SmiNode) IsScalar() bool {
-	return x.Oid.IsScalar()
-}
-
 type SmiElement struct{}
 
 type SmiOption struct {

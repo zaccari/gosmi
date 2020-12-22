@@ -65,22 +65,6 @@ func (o Oid) String() string {
 	return strings.Join(oidParts, ".")
 }
 
-// https://sourceforge.net/p/net-snmp/mailman/message/16580196/
-//
-// An Object type (an object class) that is a columnar or leaf object is
-// identified by an OID value (called it's name). The last sub-identifier cannot
-// be zero. (See RFC 2578, last paragraph of section 7.10).
-// ...
-// The result is that the variable (an OID value) that identifies any instance
-// of a scalar always ends with a sub-identifier with a value of zero.
-func (o Oid) IsScalar() bool {
-	if len(o) == 0 {
-		return false
-	}
-	lastSubId := o[len(o)-1]
-	return lastSubId == 0
-}
-
 func NewOid(parent Oid, subId SmiSubId) Oid {
 	oid := make(Oid, len(parent), len(parent)+1)
 	copy(oid, parent)
